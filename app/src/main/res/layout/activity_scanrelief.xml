@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreRelief">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.borobudur.w.borobudur.expsutil.CustomArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switchaudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Audio   "
+        android:textColor="#fff"
+        android:textOff=" OFF "
+        android:textOn=" ON "
+        android:textStyle="bold"
+        android:thumb="@drawable/swthumb"
+        app:showText="true"
+        app:track="@drawable/swtrack" />
+
+    <ImageView
+        android:id="@+id/imagefitscan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fit2" />
+
+    <ScrollView
+        android:id="@+id/nonar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000">
+
+            <TextView
+                android:id="@+id/textrelief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/textrelief2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#fff"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/buttonsetting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="#00ffffff"
+        android:gravity="center"
+        android:src="@drawable/ic_settings_black_24dp" />
+
+    <Button
+        android:id="@+id/buttonmengerti"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/borderbutton"
+        android:text="Mengerti"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/cardlokasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:autoPlay="false"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:strokeColor="#FF777777"></com.synnapps.carouselview.CarouselView>
+</RelativeLayout>

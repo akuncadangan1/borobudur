@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/cell_info_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e1e1e1">
+
+            <TextView
+                android:id="@+id/celltittle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/backhome1"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="#00000000"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_cell_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/text_cell_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+</ScrollView>

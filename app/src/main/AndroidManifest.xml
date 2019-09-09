@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.borobudur.w.borobudur">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/iconsplash"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false"
+        tools:ignore="GoogleAppIndexingWarning">
+        <uses-library
+            android:name="com.john.arcorelocation"
+            android:required="false" />
+
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExploreRelief" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity android:name=".Panduan" />
+        <activity android:name=".Info" />
+        <!-- <activity -->
+        <!-- android:name=".Lokasi" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="locked" -->
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" /> -->
+        <!-- <activity -->
+        <!-- android:name=".LokasiFasum" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="locked" -->
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" /> -->
+        <activity android:name=".Setting" />
+        <activity android:name=".Lokasi" />
+        <activity android:name=".Lokasi2" />
+        <activity android:name=".Lokasi3" />
+        <activity android:name=".temp.Explore2" />
+        <activity android:name=".temp.Explore3" />
+        <activity android:name=".temp.Explore4"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lokasi">
+
+    <com.google.ar.sceneform.ArSceneView
+        android:id="@+id/scenelokasi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top" />
+
+    <Spinner
+        android:id="@+id/sp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/borderbutton"
+        android:entries="@array/spin"></Spinner>
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/cardlokasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:autoPlay="false"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:strokeColor="#FF777777"></com.synnapps.carouselview.CarouselView>
+
+    <Button
+        android:id="@+id/buttonmengerti"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/borderbutton"
+        android:text="Mengerti"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/detaillayoutlokasi"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_bg">
+
+        <ImageButton
+            android:id="@+id/closebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/homebackgroundscan"
+            android:src="@drawable/icon_close" />
+
+        <TextView
+            android:id="@+id/texttittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textdetail"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/texttittle"
+            android:layout_margin="10dp"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/navigasi"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_bg2"
+            android:text="navigasi"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>
